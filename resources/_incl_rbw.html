@@ -1,0 +1,78 @@
+<!-- POLLING -->
+
+    <div class="pollCardRBW"><!-- card infor -->
+        <div class="inforview">
+            <div class="RBWlevels">
+                <div class="rbwHold">
+                    <div class="mpcard_details" id="rbwls_rbw">
+                        <img src="img/info.png" title="add your own liquidity to start trading, this is a community project the devs can only do so much lets serve. when you add liquidity, you become a liquidity funder and your funding amount will be repaid to you directly by the contract. with a 20% interest. liquidity funders are repaid directly from tax revenue, before allocating any reflections or buybacks or whatever they are settled first, the greater the volume the quicker the settlement." /><div id="dot_Pol" class="dot blockel"></div><span class="rbwTitle"><b>Funding Open:</b></span><span id="rbwWallet" class="rbwWallet" title="pair address"> 0x00...<img src="img/external.svg" /></span>
+                    </div>
+                    <div id="rbwls_dispe">
+                        <span class="targetTitle">Target Raise:</span>
+                        <span id="targetAmount" class="dispeAmount">---</span>
+                    </div>
+                </div>
+                <div class="RBWbalance">
+                    <div class="lpPool">Pool bnb</div>
+                    <div id="lpBal" class="lpBal">0.000bnb</div>
+                </div>
+                <!-- 0. RBW ETH balance, dispersed to date: bb vs treasury 
+                1.rbb breakdown{NVL & BuyBacks}, 
+                2.rbb meter, 3.verdict: polling range/ auto-rebalancing range -->
+            </div>
+            <div class="rbbLevelsHold">
+                <div class="rbbFigures">
+                    <span id="liqFundedTitle" class="rbbLevel">Liquidity Funded:</span>
+                    <span id="liqFundedBNB" class="rbbLevel">---bnb</span>
+                </div>
+                <div class="rbbFigures">
+                    <span id="liqFBNB" class="rbbLevel rbbLsmall">{BNB 0.00}</span>
+                    <span id="liqFTOKENS" class="rbbLevel rbbLsmall">{TOKENS 0.00}</span>
+                </div>
+                <div class="mbcard_detail rb_detail">
+                    <div class="parent_meter">
+                        <div id="meter_guage"></div>
+                    </div>
+                </div>
+                <div class="fundingStatus">
+                    <span class="rbbLevel rbbLsmall">status:</span>
+                    <span id="rbbBBS" class="rbbLevel rbbLsmall"><span id="rbbVerdict">{waiting for range..}</span> <img src="img/info.png"  title="the project has asked the community to fund its own liquidity, then trading will start. funders will get repaid directly by the smart contract from tax revenue, until none are left, repayment with 20% interest. this guage shows how much has been contributed so far out of the target raise in order to add all tokens on the contrct into the LP. Each funding will also take equivalent tokens from contract in order to add liquidity, until there is nothing left and target raise reached. This is a community project."></span>
+                </div>
+            </div>
+        </div>
+        <div class="pollButtons">
+            <div id="addLiquidity">Add | Fund Liquidity</div>
+        </div>
+        <div class="fundingHold">
+            <div id="fundingCard">
+                <span class="pollActiveTitle"><img src="img/info.png" title="you just need to enter the amount of BNB you are contributing, the page will calculate the equivalent amount of tokens to take from the smart contract and pair with your bnb to add into the LP"></span>
+                <div id="fundBody"><!-- expandable form section -->
+                    <!-- place form here -->
+                    <div class="shl_header"><!-- create, your delegated total, delegate -->
+                        <div class="shl_delegate">
+                            <div class="shl_inputshold">
+                                <input aria-invalid="false" autocomplete="off" id="fund_amnt" placeholder="bnb" type="number" pattern="[0-9]*" class="shldi shl_delegate_input" >
+                                <button class="shl_max"><span id="fundmax">MAX</span></button>
+                            </div>
+                            <button id="fund" class="shl_stake_submit"><span>Fund</span></button>
+                            <span id="myBal"> due---</span>
+                        </div>
+                    </br>
+                        <div class="shl_delegate">
+                            <div class="shl_inputshold">
+                                <input aria-invalid="false" autocomplete="off" id="withdraw_amnt" placeholder="bnb" type="number" pattern="[0-9]*" class="shldi shl_delegate_input" >
+                                <button class="shl_max"><span id="withdrawmax">MAX</span></button>
+                            </div>
+                            <button id="withdraw" class="shl_stake_submit"><span>Withdraw</span></button>
+                            <span id="withdrawn"> withdrawn---</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="liqFundRepays">
+                    <span>Repayment Pool:</span>
+                    <span id="liqFundRepayPool">---bnb</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
